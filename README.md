@@ -1,4 +1,4 @@
-# 💊 NadFun Monad Smart Contracts
+# NadFun Monad Smart Contracts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Solidity 0.8.28](https://img.shields.io/badge/Solidity-0.8.28-363636.svg)](https://docs.soliditylang.org/)
