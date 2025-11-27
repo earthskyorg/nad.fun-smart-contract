@@ -1,0 +1,50 @@
+{
+  "name": "nadfun-monad-smart-contract",
+  "version": "1.0.0",
+  "description": "Nadfun Smart Contract for monad",
+  "repository": "https://github.com/earthskyorg/nad.fun-smart-contract",
+  "author": "earthskyorg",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=20.0.0",
+    "chai": "^4.2.0",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.27.0",
+    "hardhat-gas-reporter": "^2.3.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-solidity": "^1.3.1",
+    "solhint": "^4.5.4",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.3.0",
+    "typescript": ">=4.5.0"
+  },
+  "scripts": {
+    "build": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test",
+    "test:watch": "hardhat test --watch",
+    "coverage": "hardhat coverage",
+    "typecheck": "tsc --noEmit",
+    "lint:sol": "solhint --config solhint.config.json \"contracts/**/*.sol\"",
+    "lint": "yarn lint:sol && yarn typecheck",
+    "format": "prettier --write .",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network monadTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network monadMainnet"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
