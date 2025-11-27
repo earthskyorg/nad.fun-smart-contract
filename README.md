@@ -90,8 +90,6 @@ Optional: enable the gas reporter by toggling `ENABLE_GAS_REPORT=true` in the
 
 ## Testing & quality gates
 
-![Unit test output](screenshot.png)
-
 - Tests build deterministic fixtures, assert math helpers, and cover admin
   code paths.
 - `solhint` and Prettier enforce consistent formatting for Solidity + TypeScript
